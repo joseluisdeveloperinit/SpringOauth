@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Perfil GitHub</title>
+</head>
+<body>
+<h1>Hola, <span th:text="${name} ?: ${login}"></span>!</h1>
+<p>Username: <span th:text="${login}"></span></p>
+<p th:if="${email} != null">Email: <span th:text="${email}"></span></p>
+<a href="/logout">Cerrar sesión</a>
+</body>
+</html>
